@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
 componentDidMount() {
-    let intervalId = setInterval(()=> {
+    let timeoutId = setTimeout(()=> {
         this.setState(prevState => {
             if (prevState.selectedImage === this.state.images[0]) {
                     return {selectedImage: this.state.images[1]}
@@ -22,14 +22,14 @@ componentDidMount() {
                 return {selectedImage: this.state.images[0]}
             }
         })
-    }, 5000)
+    }, 4000)
     this.setState({
-        intervalId
+        timeoutId
     })
 }
 
 componentWillUnmount() {
-    clearInterval(this.state.intervalId);
+    clearTimeout(this.state.timeoutId);
 }
 
 
@@ -40,7 +40,9 @@ componentWillUnmount() {
                     style={{
                         backgroundImage: `url(${this.state.selectedImage})`,
                         backgroundSize: 'cover',
-                        backgroundRepeat: 'repeat-y'
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'repeat-y',
+                        height: '100%'
                         }}>
                     <Header/> 
                     <Map/>
