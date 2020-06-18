@@ -42,7 +42,8 @@ componentWillUnmount() {
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
                         backgroundRepeat: 'repeat-y',
-                        height: '100%'
+                        height: '100%',
+                        transition: '5s',
                         }}>
                     <Header/> 
                     <Map/>
