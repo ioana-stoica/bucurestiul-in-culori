@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
     class App extends React.Component {
 
         state = {
-        images: ['/img/wallp1_BW.jpg','/img/wallp1.jpg'],
-        selectedImage: '/img/wallp1_BW.jpg'
+        images: ['img/wallp1_BW.jpg','img/wallp1.jpg'],
+        selectedImage: 'img/wallp1_BW.jpg'
     };
 
 componentDidMount() {
