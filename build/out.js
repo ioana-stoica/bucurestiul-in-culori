@@ -1438,7 +1438,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return /*#__PURE__*/react_default.a.createElement("div", {
           className: "main-container",
           style: {
-            backgroundImage: "url(".concat(this.state.selectedImage, ")"),
+            backgroundImage: "url(\"".concat(this.state.selectedImage, "\")"),
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'repeat-y',

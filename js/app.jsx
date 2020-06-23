@@ -38,7 +38,7 @@ componentWillUnmount() {
             return ( 
                 <div className="main-container" 
                     style={{
-                        backgroundImage: `url(${this.state.selectedImage})`,
+                        backgroundImage: `url("${this.state.selectedImage}")`,
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
                         backgroundRepeat: 'repeat-y',
